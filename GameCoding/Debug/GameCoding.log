@@ -1,0 +1,3 @@
+﻿  GameCoding.cpp
+C:\Users\mvat1\Source\Repos\GameCoding\GameCoding\GameCoding.cpp(43,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameCoding.vcxproj -> C:\Users\mvat1\Source\Repos\GameCoding\Debug\GameCoding.exe
