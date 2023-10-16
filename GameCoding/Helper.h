@@ -1,18 +1,34 @@
-#pragma once
-
-enum MoveDir
+enum class DIRECTION
 {
-	MD_NONE,
-	MD_LEFT,
-	MD_RIGHT,
-	MD_UP,
-	MD_DOWN
+	LEFT,
+	DOWN,
+	RIGHT,
+	UP
 };
 
-void HandleKeyInput();
-
-void SetCursorPosition(int x, int y);
-
-void SetCursorOnOff(bool visible);
-
-extern MoveDir GMoveDir;
+void MoveDirectionCleanCode(int& nextX, int& nextY, DIRECTION type)
+{
+	int dir = (int)type;
+	int directionX[]{ 1,0,-1,0 };
+	int directionY[]{ 0,1,-1,0 };
+	nextX += directionX[dir];
+	nextY += directionX[dir];
+}
+void MoveDirectionNotClean(int& x, int& y, DIRECTION dir)
+{
+	switch (dir)
+	{
+	case DIRECTION::LEFT:
+		++x;
+		break;
+	case DIRECTION::DOWN:
+		++y;
+		break;
+	case DIRECTION::RIGHT:
+		--x;
+		break;
+	case DIRECTION::UP:
+		--y;
+		break;
+	}
+}
