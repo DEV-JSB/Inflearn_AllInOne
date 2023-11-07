@@ -45,6 +45,22 @@ void Item::PrintInfo()
 
 Weapon::Weapon()
 {
+
+	switch (_rarity)
+	{
+	case IR_Normal:
+		_damage = 1 + rand() % 5;
+		break;
+
+	case IR_Rare:
+		_damage = 10 + rand() % 5;
+		break;
+
+	case IR_Unique:
+		_damage = 20 + rand() % 5;
+		break;
+
+	}
 }
 
 Weapon::~Weapon()
@@ -62,6 +78,21 @@ void Weapon::PrintInfo()
 
 Armor::Armor()
 {
+	switch (_rarity)
+	{
+	case IR_Normal:
+		_defence = 1 + rand() % 5;
+		break;
+
+	case IR_Rare:
+		_defence = 2 + rand() % 5;
+		break;
+
+	case IR_Unique:
+		_defence = 3 + rand() % 5;
+		break;
+
+	}
 }
 
 Armor::~Armor()
