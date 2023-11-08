@@ -1,27 +1,22 @@
 #pragma once
 
-
-enum ItemRarity
-{
-	IR_Normal,
-	IR_Rare,
-	IR_Unique
-};
+#include "Enum.h"
 
 class Item
 {
-
+public:
+	//Item();
+	Item(ItemType itemType);
+	virtual ~Item(); 
 
 public:
-	Item();
-	virtual ~Item();
-
 	virtual void PrintInfo();
-
+	ItemType GetItemType() { return _itemType; }
 protected:
 	int _itemId = 0;
 	int _itemCount = 0;
-	ItemRarity _rarity;
+	ItemRarity _rarity = IR_Normal;
+	ItemType _itemType = IT_None;
 };
 
 

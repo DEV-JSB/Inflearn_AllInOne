@@ -2,7 +2,9 @@
 
 #include<iostream>	
 using namespace std;
-Item::Item()
+
+Item::Item(ItemType itemType)
+	:_itemType(itemType)
 {
 	int randValue = rand() % 100;
 	if (randValue < 50)
@@ -22,6 +24,7 @@ Item::Item()
 Item::~Item()
 {
 }
+
 
 void Item::PrintInfo()
 {
@@ -43,7 +46,7 @@ void Item::PrintInfo()
 
 }
 
-Weapon::Weapon()
+Weapon::Weapon():Item(ItemType::IT_Weapon)
 {
 
 	switch (_rarity)
@@ -76,7 +79,7 @@ void Weapon::PrintInfo()
 
 }
 
-Armor::Armor()
+Armor::Armor():Item(ItemType::IT_Armor)
 {
 	switch (_rarity)
 	{

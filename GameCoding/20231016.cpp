@@ -2,20 +2,6 @@
 #include <iostream>
 
 
-class Inventory
-{
-public:
-	Inventory()
-	{
-		std::cout << "Inventory()";
-
-	}
-	~Inventory()
-	{
-		std::cout << "~Inventory()";
-
-	}
-};
 class Player
 {
 public:
@@ -42,7 +28,6 @@ public:
 	}
 public:
 	int a = 0;
-	Inventory inven;
 };
 
 void main()

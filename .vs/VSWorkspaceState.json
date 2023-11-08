@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GameCoding"
+    "\\GameCoding",
+    "\\RPGGame"
   ],
-  "SelectedNode": "\\GameCoding\\DynamicMemoryAllocation.cpp",
+  "SelectedNode": "\\RPGGame\\Item.h",
   "PreviewInSolutionExplorer": false
 }
