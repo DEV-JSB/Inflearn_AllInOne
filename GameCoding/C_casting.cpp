@@ -32,7 +32,7 @@ void main()
 		int a = 123456789;
 		float b = (float)a;
 		int c = 0;
-	}
+	} 
 		// 참조 타입 변환 
 	{
 		int a = 123456789;

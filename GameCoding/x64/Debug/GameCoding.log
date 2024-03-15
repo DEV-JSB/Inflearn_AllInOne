@@ -1,3 +1,1 @@
-﻿  C_casting.cpp
-D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(6,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  GameCoding.vcxproj -> D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\GameCoding.exe
+﻿  GameCoding.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\GameCoding.exe

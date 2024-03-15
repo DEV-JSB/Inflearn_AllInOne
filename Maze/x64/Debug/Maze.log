@@ -1,0 +1,5 @@
+﻿  List.cpp
+  Maze.cpp
+C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\Maze\Maze.cpp(4,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  Maze.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\Maze.exe
