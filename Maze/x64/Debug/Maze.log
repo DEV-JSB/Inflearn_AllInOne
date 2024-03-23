@@ -1,5 +1,1 @@
-﻿  List.cpp
-  Maze.cpp
-C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\Maze\Maze.cpp(4,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Generating Code...
-  Maze.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\Maze.exe
+﻿D:\VS2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
