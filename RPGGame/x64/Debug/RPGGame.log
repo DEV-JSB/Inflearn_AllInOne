@@ -1,1 +1,5 @@
-﻿D:\VS2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿RPGGame.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Inventory::AddItem(class Item *)" (?AddItem@Inventory@@QEAA_NPEAVItem@@@Z) referenced in function main
+RPGGame.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Inventory::RemoveItem(class Item *)" (?RemoveItem@Inventory@@QEAA_NPEAVItem@@@Z) referenced in function main
+RPGGame.obj : error LNK2019: unresolved external symbol "public: class Item * __cdecl Inventory::GetItemAtSlot(int)" (?GetItemAtSlot@Inventory@@QEAAPEAVItem@@H@Z) referenced in function main
+RPGGame.obj : error LNK2019: unresolved external symbol "public: static class Inventory * __cdecl Inventory::GetInstance(void)" (?GetInstance@Inventory@@SAPEAV1@XZ) referenced in function main
+D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\RPGGame.exe : fatal error LNK1120: 4 unresolved externals

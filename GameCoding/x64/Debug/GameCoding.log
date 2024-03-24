@@ -1,1 +1,6 @@
-﻿D:\VS2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿  C_casting.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(22,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(45,15): warning C4244: 'initializing': conversion from 'float' to '__int64', possible loss of data
+D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(51,16): warning C4244: 'initializing': conversion from 'float' to 'short', possible loss of data
+D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(57,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  GameCoding.vcxproj -> D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\GameCoding.exe

@@ -1,19 +1,25 @@
-#include "List.h"
+#include "pch.h"
+#include "Board.h"
 #include "Vector.h"
+#include "Player.h"
+
+
+Board board;
+Player player;
+
 void main()
 {
-	/*List list;
+	::srand(static_cast<uint32>(time(nullptr)));
 
-	list.AddAtHead(1);
-	list.AddAtHead(2);
-	list.AddAtHead(3);
-	list.AddAtHead(4);
-	list.Print();*/
+	while (true)
+	{
+		// 입력
 
 
-	Vector v;
-	v.push_back(1);
-	v.push_back(2);
-	v.push_back(3);
+		// 로직 
+		
 
+		// 렌더링
+		board.Render();
+	}
 }
