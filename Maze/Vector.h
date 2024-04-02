@@ -38,7 +38,6 @@ public:
 			reserve(newCapacity);
 		}
 		_buffer[_size++] = data;
-		++_size;
 	}
 
 	void pop_back()

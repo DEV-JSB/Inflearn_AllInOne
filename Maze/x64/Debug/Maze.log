@@ -1,2 +1,6 @@
-﻿  Player.cpp
-  Maze.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\Maze.exe
+﻿  Board.cpp
+  Maze.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Maze.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Player.cpp
+  Generating Code...
+  Maze.vcxproj -> D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\Maze.exe

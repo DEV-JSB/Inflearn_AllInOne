@@ -42,12 +42,6 @@ void Player::CaculatePath()
 	//목적지
 	Pos destination = _board->GetExitPos();
 
-	for (int i = 0; i < 20; ++i)
-	{
-		pos += Pos(1, 0);
-		_path.push_back(pos);
-	}
-
 	Pos front[4] =
 	{
 		Pos(-1,0),
@@ -62,6 +56,28 @@ void Player::CaculatePath()
 
 	while (pos != destination)
 	{
-
+		// 현재 바라보는 방향을 기준으로 오른쪽으로 갈 수 있는지 확인
+		int32 newDir = _dir - 1 % DIR_COUNT;
+		if (CanGo(pos + front[newDir]))
+		{
+			_dir = newDir;
+			// 오른쪽 방향으로 90도 회전
+			// 앞으로 한 보 전진
+			pos += front[_dir];
+			// 좌표 기록
+			_path.push_back(pos);
+		}
+		// 현재 바라보는 방향을 기준으로 전진할 수 있는지 확인
+		else if (CanGo(pos + front[_dir]))
+		{
+			pos += front[_dir];
+			_path.push_back(pos);
+		}
+		// 현재 바라보는 방향을 기준으로 왼쪽으로 갈 수 있는지 확인
+		else
+		{
+			newDir = _dir + 1 % DIR_COUNT;
+			_dir = newDir;
+		}
 	}
 }
