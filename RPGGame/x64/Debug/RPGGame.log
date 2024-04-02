@@ -1,5 +1,5 @@
-﻿RPGGame.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Inventory::AddItem(class Item *)" (?AddItem@Inventory@@QEAA_NPEAVItem@@@Z) referenced in function main
-RPGGame.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Inventory::RemoveItem(class Item *)" (?RemoveItem@Inventory@@QEAA_NPEAVItem@@@Z) referenced in function main
-RPGGame.obj : error LNK2019: unresolved external symbol "public: class Item * __cdecl Inventory::GetItemAtSlot(int)" (?GetItemAtSlot@Inventory@@QEAAPEAVItem@@H@Z) referenced in function main
-RPGGame.obj : error LNK2019: unresolved external symbol "public: static class Inventory * __cdecl Inventory::GetInstance(void)" (?GetInstance@Inventory@@SAPEAV1@XZ) referenced in function main
-D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\RPGGame.exe : fatal error LNK1120: 4 unresolved externals
+﻿  Inventory.cpp
+  RPGGame.cpp
+  Generating Code...
+C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\RPGGame\Inventory.cpp(28): warning C4715: 'Inventory::AddItem': not all control paths return a value
+  RPGGame.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\RPGGame.exe

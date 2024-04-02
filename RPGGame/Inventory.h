@@ -27,4 +27,3 @@ private:
 
 	static Inventory* s_instance;
 };
-

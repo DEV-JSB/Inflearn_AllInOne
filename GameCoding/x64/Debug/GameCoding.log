@@ -1,6 +1,1 @@
-﻿  C_casting.cpp
-D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(22,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(45,15): warning C4244: 'initializing': conversion from 'float' to '__int64', possible loss of data
-D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(51,16): warning C4244: 'initializing': conversion from 'float' to 'short', possible loss of data
-D:\MVAT\CSharp\Inflearn_AllInOne\GameCoding\C_casting.cpp(57,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  GameCoding.vcxproj -> D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\GameCoding.exe
+﻿  GameCoding.vcxproj -> C:\Users\devv\Documents\GitHub\Inflearn_AllInOne\x64\Debug\GameCoding.exe

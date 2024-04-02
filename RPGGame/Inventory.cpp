@@ -34,7 +34,7 @@ bool Inventory::RemoveItem(Item* item)
 
 	int slot = FindItemSlot(item);
 	if (0 > slot)
-		return false;	
+		return false;
 
 	_items[slot] = nullptr;
 	--_itemCount;
@@ -71,7 +71,7 @@ Inventory* Inventory::GetInstance()
 
 int Inventory::FindEmptySlot()
 {
-	for(int i = 0 ; i < MAX_SLOT ; ++i)
+	for (int i = 0; i < MAX_SLOT; ++i)
 	{
 		if (nullptr == _items[i])
 			return i;

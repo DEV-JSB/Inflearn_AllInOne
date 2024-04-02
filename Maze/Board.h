@@ -6,6 +6,8 @@ enum
 	BOARD_MAX_SIZE = 100
 };
 
+class Player;
+
 enum class TileType
 {
 	NONE = 0,
@@ -19,7 +21,7 @@ public:
 	Board();
 	~Board();
 
-	void Init(int32 size);
+	void Init(int32 size,class Player* player);
 	void Render();
 
 	void GenerateMap();
@@ -32,5 +34,6 @@ public:
 private:
 	TileType	_tile[BOARD_MAX_SIZE][BOARD_MAX_SIZE];
 	int32		_size = 0;
+	Player*		_player = nullptr;
 };
 
