@@ -3,11 +3,11 @@
 
 using namespace std;
 
+template<typename T>
 class Node
 {
 
 	//typedef int T;
-	using T = int;
 public:
 	Node(int data) : data(data), prev(nullptr), next(nullptr)
 	{
@@ -19,33 +19,33 @@ public:
 	Node* next;
 };
 
-
+template<typename T>
 class List
 {
 public:
 	List()
 	{
-		_head = new Node(0);
-		_tail = new Node(0);
+		_head = new Node<T>(0);
+		_tail = new Node<T>(0);
 		_head->next = _tail;
 		_tail->prev = _head;
 	}
 	~List()
 	{
-		Node* node = _head;
+		Node<T>* node = _head;
 		while (node)
 		{
-			Node* willDeleteNode = node;
+			Node<T>* willDeleteNode = node;
 			node = willDeleteNode->next;
 			delete willDeleteNode;
 		}
 	}
 
 
-	Node* AddAtHead(int data)
+	Node<T>* AddAtHead(int data)
 	{
-		Node* node = new Node(data);
-		Node* headNextNode = _head->next;
+		Node<T>* node = new Node(data);
+		Node<T>* headNextNode = _head->next;
 
 		headNextNode->prev = node;
 		node->next = headNextNode;
@@ -54,10 +54,10 @@ public:
 		return node;
 	}
 
-	Node* AddAtTail(int data)
+	Node<T>* AddAtTail(int data)
 	{
-		Node* node = new Node(data);
-		Node* tailPrevNode = _tail->prev;
+		Node<T>* node = new Node(data);
+		Node<T>* tailPrevNode = _tail->prev;
 
 		tailPrevNode->next = node;
 		node->prev = tailPrevNode;
@@ -66,9 +66,9 @@ public:
 		return node;
 	 }
 	
-	Node* GetNode(int index)
+	Node<T>* GetNode(int index)
 	{
-		Node* node = _head->next;
+		Node<T>* node = _head->next;
 		if (node == _tail)
 			return nullptr;
 		for (int i = 0; i < index; ++i)
@@ -82,7 +82,7 @@ public:
 	}
 	void Print()
 	{
-		Node* node = _head->next;
+		Node<T>* node = _head->next;
 		while (_tail != node)
 		{
 			cout << node->data << " ";
@@ -91,10 +91,10 @@ public:
 		cout << endl;
 	}
 
-	void Insert(Node* posNode, int data)
+	void Insert(Node<T>* posNode, int data)
 	{
-		Node* node = new Node(data);
-		Node* prevNode = posNode->prev;
+		Node<T>* node = new Node(data);
+		Node<T>* prevNode = posNode->prev;
 
 		prevNode->next = node;
 		node->next = posNode;
@@ -103,17 +103,17 @@ public:
 		
 	}
 	 
-	void Remove(Node* wantDeleteNode)
+	void Remove(Node<T>* wantDeleteNode)
 	{
-		Node* prevNode = wantDeleteNode->prev;
-		Node* nextNode = wantDeleteNode->next;
+		Node<T>* prevNode = wantDeleteNode->prev;
+		Node<T>* nextNode = wantDeleteNode->next;
 		prevNode->next = nextNode;
 		nextNode->prev = prevNode;
 
 		delete wantDeleteNode;
 	}
 private:
-	Node* _head = nullptr;
-	Node* _tail = nullptr;
+	Node<T>* _head = nullptr;
+	Node<T>* _tail = nullptr;
 
 };
