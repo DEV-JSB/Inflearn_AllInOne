@@ -45,6 +45,12 @@
     <ClInclude Include="pch.h">
       <Filter>Main</Filter>
     </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="List.cpp">
@@ -70,6 +76,12 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>DataStructure</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

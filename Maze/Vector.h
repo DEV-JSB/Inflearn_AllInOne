@@ -44,7 +44,7 @@ public:
 	void pop_back()
 	{
 		//TODO : ¼Ò¸ê
-		_size;
+		--_size;
 	}
 
 	T& back()
@@ -52,6 +52,12 @@ public:
 		return _buffer[_size - 1];
 	}
 
+
+	void resize(int size)
+	{
+		reverse(size);
+		_size = size;
+	}
 	void reserve(int capacity)
 	{
 		if (_capacity >= capacity)
