@@ -1,6 +1,33 @@
 ﻿  Board.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2672: 'std::reverse': no matching overloaded function found
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2780: 'void std::reverse(const _BidIt,const _BidIt)': expects 2 arguments - 1 provided
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xutility(5405): message : see declaration of 'std::reverse'
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): message : 'reverse': function declaration must be available as none of the arguments depend on a template parameter
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(96): message : see reference to class template instantiation 'Vector<T>' being compiled
+  List.cpp
   Maze.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2672: 'std::reverse': no matching overloaded function found
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2780: 'void std::reverse(const _BidIt,const _BidIt)': expects 2 arguments - 1 provided
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xutility(5405): message : see declaration of 'std::reverse'
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): message : 'reverse': function declaration must be available as none of the arguments depend on a template parameter
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(96): message : see reference to class template instantiation 'Vector<T>' being compiled
 D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Maze.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Player.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2672: 'std::reverse': no matching overloaded function found
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2780: 'void std::reverse(const _BidIt,const _BidIt)': expects 2 arguments - 1 provided
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xutility(5405): message : see declaration of 'std::reverse'
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): message : 'reverse': function declaration must be available as none of the arguments depend on a template parameter
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(96): message : see reference to class template instantiation 'Vector<T>' being compiled
+  Queue.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2672: 'std::reverse': no matching overloaded function found
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2780: 'void std::reverse(const _BidIt,const _BidIt)': expects 2 arguments - 1 provided
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xutility(5405): message : see declaration of 'std::reverse'
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): message : 'reverse': function declaration must be available as none of the arguments depend on a template parameter
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(96): message : see reference to class template instantiation 'Vector<T>' being compiled
+  Stack.cpp
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2672: 'std::reverse': no matching overloaded function found
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): error C2780: 'void std::reverse(const _BidIt,const _BidIt)': expects 2 arguments - 1 provided
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xutility(5405): message : see declaration of 'std::reverse'
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(58,10): message : 'reverse': function declaration must be available as none of the arguments depend on a template parameter
+D:\MVAT\CSharp\Inflearn_AllInOne\Maze\Vector.h(96): message : see reference to class template instantiation 'Vector<T>' being compiled
   Generating Code...
-  Maze.vcxproj -> D:\MVAT\CSharp\Inflearn_AllInOne\x64\Debug\Maze.exe
